@@ -1,0 +1,8 @@
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: darkblue;
+}
+.button {
+    -fx-font-size: 14px;
+    -fx-background-color: lightblue;
+}
