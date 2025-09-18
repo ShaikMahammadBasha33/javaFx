@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-18T11:30:26 IST" name="Default suite" finished-at="2025-09-18T11:30:28 IST" duration-ms="1430">
+    <groups>
+    </groups>
+    <test started-at="2025-09-18T11:30:26 IST" name="Default test" finished-at="2025-09-18T11:30:28 IST" duration-ms="1430">
+      <class name="simpleform.simpleform.test.RegistrationControllerTest">
+        <test-method is-config="true" signature="initToolkit()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:26 IST" name="initToolkit" finished-at="2025-09-18T11:30:27 IST" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initToolkit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:27 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidateConfirmPassword_EmptyConfirmPassword()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidateConfirmPassword_EmptyConfirmPassword" finished-at="2025-09-18T11:30:28 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateConfirmPassword_EmptyConfirmPassword -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidateConfirmPassword_MatchingPasswords()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidateConfirmPassword_MatchingPasswords" finished-at="2025-09-18T11:30:28 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateConfirmPassword_MatchingPasswords -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidateConfirmPassword_PasswordMismatch()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidateConfirmPassword_PasswordMismatch" finished-at="2025-09-18T11:30:28 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateConfirmPassword_PasswordMismatch -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidateEmail_EmptyEmail()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidateEmail_EmptyEmail" finished-at="2025-09-18T11:30:28 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateEmail_EmptyEmail -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidateEmail_InvalidEmailFormat()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidateEmail_InvalidEmailFormat" finished-at="2025-09-18T11:30:28 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateEmail_InvalidEmailFormat -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidateEmail_ValidEmail()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidateEmail_ValidEmail" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateEmail_ValidEmail -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidateFullName_EmptyName()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidateFullName_EmptyName" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateFullName_EmptyName -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidateFullName_ValidName()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidateFullName_ValidName" finished-at="2025-09-18T11:30:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateFullName_ValidName -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidatePassword_EmptyPassword()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidatePassword_EmptyPassword" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatePassword_EmptyPassword -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidatePassword_TooShort()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidatePassword_TooShort" finished-at="2025-09-18T11:30:28 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatePassword_TooShort -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidatePassword_ValidPassword()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidatePassword_ValidPassword" finished-at="2025-09-18T11:30:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatePassword_ValidPassword -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidatePhone_EmptyPhone()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidatePhone_EmptyPhone" finished-at="2025-09-18T11:30:28 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatePhone_EmptyPhone -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidatePhone_InvalidPhoneFormat()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidatePhone_InvalidPhoneFormat" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatePhone_InvalidPhoneFormat -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="setUp" finished-at="2025-09-18T11:30:28 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidatePhone_ValidPhone()[pri:0, instance:simpleform.simpleform.test.RegistrationControllerTest@5bda8e08]" started-at="2025-09-18T11:30:28 IST" name="testValidatePhone_ValidPhone" finished-at="2025-09-18T11:30:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatePhone_ValidPhone -->
+      </class> <!-- simpleform.simpleform.test.RegistrationControllerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

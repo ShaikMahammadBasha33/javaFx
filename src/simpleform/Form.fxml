@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="600.0" prefWidth="500" stylesheets="@style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleform.RegistrationController">
+
+    <!-- Top menu -->
+    <top>
+        <MenuBar prefHeight="0.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem onAction="#handleClose" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem onAction="#handleAbout" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <!-- Center registration form -->
+    <center>
+        <GridPane alignment="CENTER" hgap="15" prefHeight="400.0" prefWidth="600.0" vgap="15">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+
+            <columnConstraints>
+                <!-- First column: Labels (30% width) -->
+                <ColumnConstraints percentWidth="30.0" />
+                <!-- Second column: Input fields (70% width) -->
+                <ColumnConstraints percentWidth="30.0" />
+            <ColumnConstraints percentWidth="70.0" />
+            </columnConstraints>
+
+            <rowConstraints>
+                <!-- Ensure space for each input and its error label -->
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+                <RowConstraints minHeight="5.0" />
+            <RowConstraints minHeight="5.0" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            </rowConstraints>
+
+            <!-- Title -->
+            <Label styleClass="form-title" text="Registration Form" GridPane.columnSpan="2" />
+
+            <!-- Full Name -->
+            <Label text="Full Name:" GridPane.rowIndex="1" />
+            <TextField fx:id="txtFullName" prefWidth="300.0" promptText="Enter full name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="lblFullNameError" style="-fx-text-fill: red;" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+            <!-- Email -->
+            <Label text="Email:" GridPane.rowIndex="3" />
+            <TextField fx:id="txtEmail" prefWidth="300.0" promptText="you@gmail.com" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="lblEmailError" style="-fx-text-fill: red;" text="" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+            <!-- Password -->
+            <Label text="Password:" GridPane.rowIndex="5" />
+            <PasswordField fx:id="txtPassword" prefWidth="300.0" promptText="Enter password" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="lblPasswordError" style="-fx-text-fill: red;" text="" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+
+            <!-- Confirm Password -->
+            <Label text="Confirm Password:" GridPane.rowIndex="7" />
+            <PasswordField fx:id="txtConfirmPassword" prefWidth="300.0" promptText="Re-enter password" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label fx:id="lblConfirmPasswordError" style="-fx-text-fill: red;" text="" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+
+            <!-- Gender -->
+            <Label text="Gender:" GridPane.rowIndex="9" />
+            <HBox spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                <children>
+                    <RadioButton fx:id="rbMale" text="Male" />
+                    <RadioButton fx:id="rbFemale" text="Female" />
+                    <RadioButton fx:id="rbOther" text="Other" />
+                </children>
+            </HBox>
+            <Label fx:id="lblGenderError" style="-fx-text-fill: red;" text="" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+
+            <!-- Phone Number -->
+            <Label text="Phone Number:" GridPane.rowIndex="11" />
+            <TextField fx:id="txtPhone" prefWidth="300.0" promptText="Enter phone number" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+            <Label fx:id="lblPhoneError" style="-fx-text-fill: red;" text="" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+
+            <!-- Buttons -->
+            <HBox alignment="CENTER_RIGHT" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="14">
+                <children>
+                    <Button onAction="#handleClear" text="Clear" />
+                    <Button fx:id="btnSubmit" onAction="#handleSubmit" text="Submit" />
+                </children>
+            </HBox>
+
+            <!-- Validation errors -->
+            <Label fx:id="lblErrors" style="-fx-text-fill: red; -fx-font-size: 12px;" text="" GridPane.columnIndex="2" GridPane.rowIndex="19" />
+           <HBox alignment="CENTER" prefHeight="36.0" prefWidth="188.0" GridPane.columnIndex="1" GridPane.rowIndex="18">
+               <padding>
+                   <Insets bottom="8" left="8" right="8" top="8" />
+               </padding>
+           </HBox>
+             <Label fx:id="lblStatus" prefHeight="20.0" prefWidth="298.0" styleClass="status-label" text="Ready" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+        </GridPane>
+    </center>
+</BorderPane>

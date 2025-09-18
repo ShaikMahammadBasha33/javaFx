@@ -1,0 +1,83 @@
+/* Style for the form title */
+.form-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Style for error messages */
+.error {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+}
+
+/* Style for status label */
+.status-label {
+    -fx-text-fill: green;
+    -fx-font-size: 14px;
+}
+
+/* Style for all labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #34495e;
+}
+
+/* Style for text fields and password fields */
+.text-field, .password-field {
+    -fx-padding: 8 10 8 10;
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+/* Hover effect for text fields */
+.text-field:hover, .password-field:hover {
+    -fx-border-color: #2980b9;
+    -fx-background-color: #ffffff;
+}
+
+/* Style for buttons */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Style for radio buttons */
+.radio-button {
+    -fx-font-size: 13px;
+    -fx-text-fill: #34495e;
+}
+
+/* Style for combo box */
+.combo-box {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+/* Hover effect for combo box */
+.combo-box:hover {
+    -fx-border-color: #2980b9;
+}
+
+/* Style for checkboxes */
+.check-box {
+    -fx-font-size: 13px;
+    -fx-text-fill: #34495e;
+}
+
+/* General background for the form */
+.root {
+    -fx-background-color: #f8f9fa;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="simpleform.simpleform.test.RegistrationControllerTest">
+        <methods>
+          <include name="testValidatePhone_ValidPhone"/>
+          <include name="testHandleSubmit_InvalidData"/>
+          <include name="testValidateConfirmPassword_EmptyConfirmPassword"/>
+          <include name="setUp"/>
+          <include name="testValidateConfirmPassword_PasswordMismatch"/>
+          <include name="testValidateEmail_EmptyEmail"/>
+          <include name="testValidateEmail_InvalidEmailFormat"/>
+          <include name="testValidateEmail_ValidEmail"/>
+          <include name="testValidatePhone_EmptyPhone"/>
+          <include name="testValidateFullName_EmptyName"/>
+          <include name="testValidatePassword_TooShort"/>
+          <include name="testValidateConfirmPassword_MatchingPasswords"/>
+          <include name="testValidatePassword_ValidPassword"/>
+          <include name="testValidateFullName_ValidName"/>
+          <include name="testValidatePassword_EmptyPassword"/>
+          <include name="testValidatePhone_InvalidPhoneFormat"/>
+        </methods>
+      </class> <!-- simpleform.simpleform.test.RegistrationControllerTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
