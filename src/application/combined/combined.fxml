@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.combined.CombinedController">
+            
+             <top>
+        <ToolBar>
+            <Button text="Save Data" onAction="#saveData"/>
+        </ToolBar>
+    </top>
+
+    <left>
+        <TreeView fx:id="treeView" prefWidth="200.0" />
+    </left>
+
+    <center>
+        <ListView fx:id="listView" prefWidth="200.0" />
+    </center>
+
+    <right>
+        <TableView fx:id="tableView" prefWidth="300.0">
+            <columns>
+                <TableColumn fx:id="colName" text="Name" prefWidth="150.0"/>
+                <TableColumn fx:id="colAge" text="Age" prefWidth="100.0"/>
+            </columns>
+        </TableView>
+    </right>
+
+</BorderPane>
