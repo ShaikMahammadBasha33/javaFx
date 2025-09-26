@@ -16,15 +16,12 @@ import javafx.stage.FileChooser;
 
 public class CombinedController implements Initializable {
 
-    // TreeView
     @FXML
     private TreeView<String> treeView;
 
-    // ListView
     @FXML
     private ListView<String> listView;
 
-    // TableView
     @FXML
     private TableView<Person> tableView;
     @FXML
@@ -32,7 +29,8 @@ public class CombinedController implements Initializable {
     @FXML
     private TableColumn<Person, Integer> colAge;
 
-    @Override
+    @SuppressWarnings("unchecked")
+	@Override
     public void initialize(URL location, ResourceBundle resources) {
         TreeItem<String> root = new TreeItem<>("Programming Languages");
         TreeItem<String> parent1 = new TreeItem<>("Java");

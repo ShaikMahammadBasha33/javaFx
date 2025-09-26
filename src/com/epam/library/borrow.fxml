@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.epam.library.BorrowBooksController"
+            prefWidth="800" prefHeight="500">
+
+    <children>
+        <!-- Person Selector -->
+        <Label layoutX="20" layoutY="20" text="Select Person:"/>
+        <ComboBox fx:id="personComboBox" layoutX="120" layoutY="15" prefWidth="200"/>
+
+        <!-- Person Details -->
+        <VBox layoutX="20" layoutY="60" spacing="5">
+            <Label fx:id="personNameLabel" text="Name: -" />
+            <Label fx:id="personEmailLabel" text="Email: -" />
+            <Label fx:id="borrowedCountLabel" text="Borrowed Books: 0" />
+        </VBox>
+
+        <!-- Available Books Table -->
+        <Label layoutX="20" layoutY="140" text="Available Books:"/>
+        <TableView fx:id="booksTable" layoutX="20" layoutY="160" prefWidth="350" prefHeight="250">
+            <columns>
+                <TableColumn fx:id="titleColumn" text="Title" prefWidth="120"/>
+                <TableColumn fx:id="authorColumn" text="Author" prefWidth="120"/>
+                <TableColumn fx:id="availableColumn" text="Available" prefWidth="100"/>
+            </columns>
+        </TableView>
+
+        <!-- Borrowed Books Table -->
+        <Label layoutX="400" layoutY="140" text="Borrowed Books:"/>
+        <TableView fx:id="borrowedTable" layoutX="400" layoutY="160" prefWidth="500" prefHeight="250">
+            <columns>
+                <TableColumn fx:id="borrowedBookCol" text="Book Title" prefWidth="150"/>
+                <TableColumn fx:id="borrowDateCol" text="Borrow Date" prefWidth="100"/>
+                <TableColumn fx:id="expiryDateCol" text="Expiry Date" prefWidth="120"/>
+                <TableColumn fx:id="returnDateCol" text="Return Date" prefWidth="120"/>
+            </columns>
+        </TableView>
+
+        <!-- Action Buttons -->
+        <Button text="Borrow Book" layoutX="120" layoutY="430" onAction="#borrowBook"/>
+        <Button text="Return Book" layoutX="500" layoutY="430" onAction="#returnBook"/>
+    </children>
+</AnchorPane>
